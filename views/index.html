@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulário de Cadastro</title>
+    <!-- Inclua os links para seus arquivos CSS e JavaScript, se necessário -->
+    <link rel="stylesheet" type="text/css" href="/css/estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pesquise um Comércio local</h1>
+        <form action="/pesquisar" method="get">
+            <label for="pesquisa">Pesquisar:</label>
+            <input type="text" name="pesquisa" id="pesquisa" placeholder="Exemplo: Jamilly">
+            <button type="submit">Pesquisar</button>
+        </form>
+        <!-- Seu conteúdo aqui -->
+        <h1>Adicione seu comércio local</h1>
+        <form action="/adicionar" method="post" enctype="multipart/form-data">
+
+            <label for="imagem">Imagem:</label>
+            <input type="file" name="imagem" id="imagem" accept="image/*" required><br>
+
+            <label for="descricao">Descrição:</label>
+            <textarea name="descricao" id="descricao" rows="4" cols="50" required></textarea><br>
+
+            <label for="nome_fantasia">Nome Fantasia:</label>
+            <input type="text" name="nome_fantasia" id="nome_fantasia" required><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" name="telefone" id="telefone" required><br>
+
+            <label for="Endereco">Endereço:</label>
+            <input type="text" name="Endereco" id="Endereco" required><br>
+
+            <button type="submit" value="Adicionar">Adicionar</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

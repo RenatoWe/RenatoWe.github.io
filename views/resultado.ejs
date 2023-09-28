@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultados da Pesquisa</title>
+    <link rel="stylesheet" type="text/css" href="/css/estilo.css">
+</head>
+<body>
+    <a href="http://localhost:3000/">Voltar</a>
+    <h1>Resultados da Pesquisa</h1>
+    <% if (resultados.length === 0) { %>
+        <p>Nenhum resultado encontrado.</p>
+    <% } else { %>
+        <ul>
+            <% resultados.forEach(function(resultado) { %>
+                <li>
+                    <!-- Exibir os campos de cada resultado -->
+                    <img src="/uploads/<%= resultado.imagem %>" alt="<%= resultado.nome_fantasia %>">
+                    <p>Descrição: <%= resultado.descricao %></p>
+                    <p>Nome Fantasia: <%= resultado.nome_fantasia %></p>
+                    <p>Telefone: <%= resultado.telefone %></p>
+                </li>
+            <% }); %>
+        </ul>
+    <% } %>
+</body>
+</html>
