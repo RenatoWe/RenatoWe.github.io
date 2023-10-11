@@ -6,9 +6,9 @@
     "multer": "^1.4.5-lts.1",
     "mysql": "^2.18.1",
     "mysql2": "^3.6.1"
+  },
+  "scripts": {
+    "build-js": "node app.js",
+    "build": "npm run build-js"
   }
 }
-  
-
-
-

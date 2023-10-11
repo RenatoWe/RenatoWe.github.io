@@ -16,10 +16,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Configurar a conexão com o banco de dados MySQL
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'emilly00@jade',
-    database: 'sgram'
+    host: 'srv814.hstgr.io',
+    user: 'u243765698_instauser',
+    password: 'Emilly00@jade',
+    database: 'u243765698_insta'
 });
 
 db.connect((err) => {
